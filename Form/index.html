@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>About You</h1>
+    <form id="questions" method="post" action="">
+        <label for="name">Name </label>
+        <input type="text" name="name" id="nname" required><br>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" step="any" min="3" max="15"><br>
+        
+        <label for="email">Email </label>
+        <input type="email" name="email" id="email" placeholder="email@gmail.com"><br>
+        
+        <label for="website">Website </label>
+        <input type="url" name="website" id="website"><br>
+        
+        <label for="birthday">Birthday </label>
+        <input type="date" name="birthday" id="birthday"><br>
+        
+        <label for="time">Time </label>
+        <input type="time" name="time" id="time"><br>
+        
+        <label for="phone">Phone </label>
+        <input type="tel" name="phone" id="phone"><br> 
+
+    <!--
+        <fieldset>
+            <legend>What is your favorite color? </legend>
+            <input type="radio" id="blue" name="favcolor" value="blue" checked>
+            <label for="blue">Blue </label><br>
+            <input type="radio" id="red" name="favcolor" value="red">
+            <label for="red">Red </label><br>
+            <input type="radio" id="green" name="favcolor" value="green">
+            <label for="green">Green </label><br>    
+        </fieldset> 
+    -->
+
+        <fieldset>
+            <legend>What is your favorite color? </legend><br>
+            <input type="checkbox" id="blue" name="favcolor" value="blue" checked>
+            <label for="blue">Blue </label>
+            <input type="checkbox" id="red" name="favcolor" value="red">
+            <label for="red">Red </label>
+            <input type="checkbox" id="green" name="favcolor" value="green">
+            <label for="green">Green </label>
+        </fieldset><br>
+
+        <label for="pizza">What is your favorite pizza topping?</label>
+        <select name="pizza" id="pizza" multiple>
+            <optgroup label="veg">
+                <option value="mushroom">Mushroom</option>
+                <option value="onion">onion</option>   
+            </optgroup>
+
+            <optgroup label="non-veg">
+                <option value="sausage">Sausage</option>
+                <option value="pepperoni">Pepperoni</option>   
+            </optgroup>
+        </select><br><br>
+
+        <label for="bio">Write a bio</label>
+        <textarea id="bio" name="poem"></textarea><br>
+
+        <label for="color">Color</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <label for="resume">Upload your resume</label>
+        <input type="file"id="resume" name="resume" accept="image/*" multiple><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"><br>
+
+        <input type="hidden" value="1234" name="tracking"><br>
+
+        <label for="search">Search</label>
+        <input type="search" id="search" name="search"><br>
+
+        <div>Not styled:<br><br>
+            <input type="submit" value="Submit">
+            <button type="submit">Submit</button>
+        </div>
+
+        <br><br>
+
+        <div id="styled">Styled:<br>
+            <input type="reset" value="Reset">
+            <button type="reset">Reset <span>button</span></button>
+        </div>
+    </form>
+</body>
+</html>

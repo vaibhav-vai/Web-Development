@@ -1,0 +1,213 @@
+button, input,select, textarea {
+    font-Family: inherit;
+    font-size: 100%;
+}
+
+input, textarea, select{
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+/*input[type="file"]{
+    font-size: 1em;
+    color: red;
+    padding-top: .5em;
+}
+
+label{
+    color:blue;
+    font-weight: bold;
+}
+
+input[type="date"] + label{
+    color: orange;
+}
+
+fieldset {
+    color: orange;
+}
+
+legend {
+    color: green;
+}
+*/
+
+input[type="text"],input[type="url"] ,input[type="email"],input[type="tel"],input[type="password"], input[type="search"] , input[type="number"] , 
+  input[type="date"] , input[type="time"],textarea{
+    width: 12em;
+    padding: 5px;
+    margin: 10px 10px 10px 0;
+    border-radius: 7px;
+    background-color: #fdedec;
+    width: 90%;
+}
+
+/*input[type="url"]{
+    width: 20em;
+}*/
+
+textarea{
+    vertical-align: middle;
+}
+
+/*label{
+    border: 1px solid red;
+    background-color: #ddd;
+    padding: 5px;
+    width: 8em;
+    display: inline-block;
+}*/
+
+input[type="checkbox"]{
+    opacity: 0;
+}
+
+/*input[type="checkbox"] + label{
+    background: url(checkbox-empty.png) left center no-repeat;
+    background-size: 1em 1em;
+    padding-left: 1.5em;
+    margin-left: -1.5em;
+}
+
+input[type="checkbox"]:checked + label{
+    background: url(checkbox-checked.png) left center no-repeat;
+    background-size: 1em 1em;
+}*/
+
+input[type="checkbox"]{
+    opacity: 0;
+    width: 0;
+}
+
+input[type="checkbox"]+label{
+    border: 2px solid #138d75;
+    background-color: #e9f7ef;
+    padding: 4px 10px;
+    border-radius: 7px;
+    display: inline-block;
+    width: 4em;
+    text-align: center;
+}
+
+input[type="checkbox"]:checked + label {
+    border-color: #a93226;
+    background-color: #f5cba7;
+    font-weight: bold;
+}
+
+select {
+    display: block;
+    margin-bottom: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: white;
+}
+
+select:not([multiple]) {
+    background: url(double-arrow.png) right center no-repeat;
+    background-size: 1em 1em;
+    padding-right: 1em;
+    background-color: #fdebd0;
+}
+select{
+    padding: 8px 1em 8px 8px;
+    background-color: #fdebd0;
+    border: 2px solid #af601a;
+}
+option{
+    padding: 5px;
+}
+optgroup{
+    border: 1px dashed #af601a;
+    padding: 5px;
+}
+
+/*#styled input, #styled button{
+   border-radius:8px;
+   cursor: pointer;
+}
+ 
+input , button{
+    padding: 10px;
+    margin: 10px;
+}
+
+button span{
+    color: red;
+    font-style: italic;
+}*/                 
+
+#styled input[type="reset"]:focus, #styled button[type="reset"]:focus {
+    border: 2px solid green;
+    outline: none;
+}
+
+#styled input[type="reset"]:hover, #styled button[type="reset"]:hover {
+    border: 2px solid red;
+}
+
+#styled input[type="reset"]:active, #styled button[type="reset"]:active {
+    background-color: orange;
+}
+
+input:focus{
+    background-color: #abebc6;
+}
+
+input:active{
+    background-color: #f1948a;
+}
+
+input[type="checkboc"]:checked + label {
+    background-color: #fcf3cf;
+}
+
+input[type="number"]:out-of-range{
+    border: 5px solid red;
+}
+
+input[type="number"]:in-range{
+    border: 5px solid green;
+}
+
+input:required {
+    border: 5px solid purple;
+}
+
+label {
+    display: block;
+}
+
+input[type="checkbox"] + label{
+    display: inline;
+}
+
+fieldset {
+    border-width: 0;
+    padding: 0;
+}
+
+select, fieldset , legend{
+    margin: .2em auto .8em auto;
+}
+
+legend{
+    margin-left: -.1em;
+    font-weight: bold;
+}
+
+@media (min-width: 35em){
+    label{
+        display: inline-block;
+        width: 10em;
+
+    }
+    input[type="text"], input[type="tel"], input[type="email"], input[type="number"], input[type="url"], input[type="date"], 
+    input[type="time"], input[type="password"], input[type="search"] {
+        width: 55%;
+    }
+    textarea, select{
+        width:55%;
+    }
+}
