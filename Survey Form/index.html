@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Web Development Survey Form</h1>
+      <p id="description">This survey form is for Web Devlopers to know about their learning journey</p>
+      <form id="survey-form">
+        <fieldset>
+        <label for="name" id="name-label">Name<input type="text" id="name" name="name" required placeholder="Enter Your Name"></label>
+
+        <label for="email" id="email-label">E-mail<input type="email" id="email" name="email" required placeholder="Enter Your E-mail"></label>
+
+        <label for="number" id="number-label">Age<input type="number" id="number" name="number" min="10" max="100" placeholder="Age"></label>
+
+        <label>Your Current Position</label>
+        <select id="dropdown" name="dropdown">
+          <option>Student</option>
+          <option>Intern</option>
+          <option>Teacher</option>
+          <option>Software Developer-I</option>
+          <option>Software Developer-II</option>
+          <option>Manager</option>
+        </select>
+      </fieldset>
+
+        <fieldset>
+          <legend>How good are you in Web Development?</legend>
+          <label for="Beginner"><input type="radio" id="Beginner" name="radiobutton" value="Beginner" class="level">Beginner</label>
+           <label for="Intermediate"><input type="radio" id="Intermediate" name="radiobutton" value="Intermediate" class="level">Intermediate</label>
+            <label for="Expert"><input type="radio" id="Expert" name="radiobutton" value="Expert" class="level">Expert</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>What all you know as Web Developer?</legend>
+          <label for="HTML"><input type="checkbox" id="HTML" value="HTML" name="checkbox" class="level">HTML</label>
+          <label for="CSS"><input type="checkbox" id="CSS" value="CSS" name="checkbox" class="level">CSS</label>
+          <label for="JavaScript"><input type="checkbox" id="JavaScript" value="JavaScript" name="checkbox" class="level">JavaScript</label>
+          <label for="Bootstrap"><input type="checkbox" id="Bootstrap" value="Bootstrap" name="checkbox" class="level">Bootstrap</label>
+          <label for="Tailwind"><input type="checkbox" id="Tailwind" value="Tailwind" name="checkbox" class="level">Tailwind</label>
+          <label for="React"><input type="checkbox" id="React" value="React" name="checkbox" class="level">React</label>
+          <label for="Angular"><input type="checkbox" id="Angular" value="Angular" name="checkbox" class="level">Angular</label>
+          <label for="Vue"><input type="checkbox" id="Vue" value="Vue" name="checkbox" class="level">Vue</label>
+        </fieldset>
+
+        <fieldset>
+        <label for="tips">What Advice you have for People who want to learn Web Developers?</label>
+        <textarea id="tips" name="tips" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <input type="submit" id="submit" value="Submit">
+      </form>
+    </main>
+  </body>
+</html>
